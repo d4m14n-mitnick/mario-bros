@@ -1,0 +1,25 @@
+@startuml Diagrama
+
+class Usuario
+class Mascota{
+    - Felicidad felicidad
+    + Pasear()
+}
+class Juego{
+    - Usuario usuario
+    - Mascota mascota
+}
+class Felicidad
+class Porcentaje{
+    - Numero numero
+    + Incrementar(Numero)
+    + Disminuir(Numero)
+}
+
+Usuario o-- Mascota
+Mascota *-- Felicidad
+Juego *-- Usuario
+Juego *-- Mascota
+Felicidad --|> Porcentaje
+
+@enduml
