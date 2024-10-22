@@ -2,6 +2,8 @@
 #include <Porcentaje.hpp>
 #include <list>
 
+using namespace std;
+
 int main(){
 
     std::list<Porcentaje> focos;
