@@ -27,6 +27,7 @@ public:
     }
 
     void Imprimir(){
+        system("color g4");
         for (auto &&focoActual  : focos){
             std::cout
             <<focoActual.Imprimir()
