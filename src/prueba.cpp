@@ -12,9 +12,9 @@ int main(int argc, char const *argv[])
 {
     std::string reset_position;
     int frame = 0;
-    auto can = Canvas(50,50);
-    can.DrawPointCircle(10,10,10);
-    can.DrawPointLine(0,0,10,10);
+    auto can = Canvas(200,200);
+    can.DrawPointCircle(20,10,10);
+    can.DrawPointLine(20,40,20,20);
     auto ColorSupport = vbox({
                             Terminal::ColorSupport() >= Terminal::Color::Palette16
                                 ? text(" 16 color palette support : Yes")
